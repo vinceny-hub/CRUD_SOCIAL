@@ -16,7 +16,7 @@ const Sequelize = require("sequelize");
 // });
 
 const sequelize = new Sequelize("database_development", "administrator", "admin", {  // database parameters declaration 
-   host: "127.0.0.1",
+   host: "us-cdbr-east-04.cleardb.com",
    dialect: "mysql",
    operatorAliases: false
   //   operatorsAliases: 0,
