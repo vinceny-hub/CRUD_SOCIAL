@@ -15,7 +15,7 @@ const port = parseInt(val, 10);
   return false;
 }
 // port de connection, 3000 par défaut
-const port = normalizePort(process.env.PORT || '8080');
+const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 console.log(process.env.PORT)
 
