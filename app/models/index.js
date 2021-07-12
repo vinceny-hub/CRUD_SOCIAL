@@ -15,7 +15,7 @@ const Sequelize = require("sequelize");
 //   }
 // });
 
-const sequelize = new Sequelize("database_development", "administrator", "admin", {  // database parameters declaration 
+const sequelize = new Sequelize("heroku_3b2b8dfa8d264d5", "bc01683a59f1ae", "39e7c0e4", {  // database parameters declaration 
    host: "us-cdbr-east-04.cleardb.com",
    dialect: "mysql",
    operatorAliases: false
