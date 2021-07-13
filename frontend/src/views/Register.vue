@@ -139,7 +139,7 @@ label {
 }
 
 .profile-img-card {
-  width: 96px;
+  width: 0px;
   height: 96px;
   margin: 0 auto 10px;
   display: block;

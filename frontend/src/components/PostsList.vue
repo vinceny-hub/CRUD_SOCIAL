@@ -28,8 +28,8 @@
                 <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
                   <div class="form-group">
                     <div class="custom-file">
-                      <p> not available on this version </p>
-                      <!-- <input  type="file" ref="file" @change="onSelect" class="" id=""> -->
+                      <!-- <p> not available on this version </p> -->
+                       <input  type="file" ref="file" @change="onSelect" class="" id="">
                         <label class=""></label>                 
                     </div>
                     <div class="py-3"></div>
