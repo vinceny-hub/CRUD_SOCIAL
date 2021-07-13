@@ -31,8 +31,6 @@ Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.use(TextareaAutosize)
 Vue.use(VueSimpleAlert);
 
-
-
 new Vue({
   router,
   store,

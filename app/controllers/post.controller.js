@@ -12,6 +12,7 @@ const Op = db.Sequelize.Op;
 
       // Create a post and save in database
 exports.create = (req, res, next) => {
+  console.log('/post')
   const postObject = {
 
       description: req.body.description,

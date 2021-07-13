@@ -1,8 +1,11 @@
 
 const express = require('express') // framework node.js
 const bodyParser = require('body-parser') //  JSON objects 
-
+require('dotenv').config()
 const path = require('path')   // path of files
+
+console.log('VARIABLE ENV' , process.env.NODE_ENV);
+
 // const dotenv = require('dotenv').config() // module whom hides connexion datas 
 const helmet = require('helmet')   // helps to secure Express apps by setting various HTTP headers
 
@@ -103,11 +106,14 @@ app.use('/api/comment', commentRoutes); // comment route path
 // app.use('/api/comments', commentPostRoutes); // route path to delete a comment of a post
 
 // app.use('*', express.static(path.join(__dirname,'/dist/index.html')))
+// if (process.env.NODE_ENV === 'dev')
+if (process.env.NODE_ENV === 'production'){
+    app.use(express.static(path.join(__dirname, 'frontend', 'dist')));
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
+    });
+}
 
-app.use(express.static(path.join(__dirname, 'frontend', 'dist')));
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
-});
 
 module.exports = app
 
