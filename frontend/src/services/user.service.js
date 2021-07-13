@@ -2,7 +2,7 @@ import axios from 'axios';
 import authHeader from './auth-header';
 
 // const API_URL = 'http://localhost:8080/api/test/';
-const API_URL = process.env.NODE_ENV === 'production' ? '/api/test' : 'http://localhost:3000/api';
+const API_URL = process.env.NODE_ENV === 'production' ? '/api/test/' : 'http://localhost:3000/api';
 
 class UserService {
   getPublicContent() {
