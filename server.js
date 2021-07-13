@@ -15,10 +15,11 @@ const port = parseInt(val, 10);
   return false;
 }
 // port de connection, 3000 par défaut
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}.`);
-});
+const port = process.env.PORT || 3000;
+app.set('port', port);
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}.`);
+// });
 
 // const port = normalizePort(process.env.PORT || '3000');
 // app.set('port', port);
@@ -70,3 +71,4 @@ require("./app/config/admin")
 
 
 server.listen(port);
+console.log(`Server is running on port ${PORT}.`);
