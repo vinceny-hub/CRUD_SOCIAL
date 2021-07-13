@@ -3,12 +3,11 @@
 import axios from "axios";
 
 let user = JSON.parse(localStorage.getItem('user'));
-let accessToken;
-
+let accessToken = user ? user.accessToken : ''
 if (process.env.NODE_ENV === 'production'){
     accessToken = user.accessToken;
 } else {
-    accessToken = user ? user.accessToken : 'developement'
+    accessToken = user ? user.accessToken : ''
 }
 
 const API_URL = process.env.NODE_ENV === 'production' ? '/api/' : 'http://localhost:3000/api/';
