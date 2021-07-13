@@ -3,7 +3,8 @@
 import axios from "axios";
 
 let user = JSON.parse(localStorage.getItem('user'));
-let accessToken = user ? user.accessToken : ''
+let accessToken;
+
 if (process.env.NODE_ENV === 'production'){
     accessToken = user.accessToken;
 } else {
