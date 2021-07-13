@@ -14,3 +14,4 @@ module.exports = {
 };
 
 
+// mysql --us-cdbr-east-04.cleardb.com --user=bc01683a59f1ae --password="39e7c0e4 --reconnect heroku_3b2b8dfa8d264d5 < schema.sql

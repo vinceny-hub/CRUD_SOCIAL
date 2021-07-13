@@ -15,9 +15,14 @@ const port = parseInt(val, 10);
   return false;
 }
 // port de connection, 3000 par défaut
-const port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
-console.log(process.env.PORT)
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
+});
+
+// const port = normalizePort(process.env.PORT || '3000');
+// app.set('port', port);
+// console.log(process.env.PORT)
 
 const errorHandler = error => {
   if (error.syscall !== 'listen') {
