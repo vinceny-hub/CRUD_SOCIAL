@@ -3,7 +3,7 @@
     <div class="card card-container">
       <img
         id="profile-img"
-        src="../img/titi0.webp"
+        src="../img/titi0.png"
         class="profile-img-card"
       />
       <form name="form" @submit.prevent="handleRegister">
@@ -139,7 +139,7 @@ label {
 }
 
 .profile-img-card {
-  /* width: 0px; */
+  width: 96px;
   height: 96px;
   margin: 0 auto 10px;
   display: block;
