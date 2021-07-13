@@ -3,14 +3,14 @@
 import axios from "axios";
 
 let user = JSON.parse(localStorage.getItem('user'));
-const accessToken = user ? user.accessToken : ' '
+// const accessToken = user ? user.accessToken : ''
 
 const API_URL = process.env.NODE_ENV === 'production' ? '/api/' : 'http://localhost:3000/api/';
 
 export default axios.create({
   baseURL: API_URL,
   headers: {
-    'Authorization': 'Bearer ' + accessToken,
+    'Authorization': 'Bearer ' + user.accessToken,
     "Content-type": "application/json",
     "Content-Type": "multipart/form-data"
   }
