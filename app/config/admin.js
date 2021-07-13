@@ -31,7 +31,7 @@ function setAdmin(req, res) {                                   // Save User to 
        })  
 
   User.create({
-    username: "admin",
+    username: "vince_administrator",
     email: "admin@live.fr",
     password: bcrypt.hashSync('ADMIN19760112', 8),
     roles: ['admin', 'user']
