@@ -421,13 +421,13 @@ export default {
   margin-bottom: 0px;
   border-radius: 50%;
 }
-.title-img{
+/* .title-img{
   margin-top: 15px;
   width: 50px; 
   margin-top: 0px;
   margin-bottom: 0px;
   border-radius: 50%;
-}
+} */
 .gedf-main{
   margin-bottom: 100px;
 }
