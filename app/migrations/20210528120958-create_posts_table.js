@@ -13,6 +13,7 @@ module.exports = {
       type: Sequelize.STRING(99),
     },
     description: {
+      // allowNull: false,
       type: Sequelize.STRING(255),
       },  
       userId: {

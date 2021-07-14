@@ -8,7 +8,8 @@ const Op = db.Sequelize.Op;
 
 function setPost(req, res) {  
 Post.create({
-    description: "Z'ai cru voir un 'rominet...",
+    id:1,
+    description: "Oh ! Z'ai cru voir un 'rominet...",
     userId: 15,
     // email: "titi@live.fr",
     // password: bcrypt.hashSync('ADMIN19760112', 8),
@@ -18,6 +19,12 @@ Post.create({
     // user_Id: bcrypt.hashSync(req.body.username,1),
     //  userId: User.id,
   }) 
+  
+  .then(() =>{
+    
+    console.log({ message: "post created successfully!" })
+  })
 }
+
 
 module.exports = setPost();
