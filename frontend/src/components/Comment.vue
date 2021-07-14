@@ -18,7 +18,7 @@
               <div v-if="!editing"> <h5><strong>{{ currentComment.description }}</strong></h5></div> 
               <textarea-autosize placeholder="Type something here..." ref="myTextarea" :min-height="30" :max-height="350" v-else type="text"  class="form-control" id="description" v-model="currentComment.description"/>
             </div>                                              <!-- edit, cancel and upload button. This is accesssible if current user is user whom made post or administrator-->
-            <img v-if="dataUser.id == currentComment.userId || showAdminBoard" class="card-ico" src="../img/icon1.png" alt="icon groupomania">
+            <img v-if="dataUser.id == currentComment.userId || showAdminBoard" class="card-ico" src="../img/titi1.png" alt="icon groupomania">
             <button v-if="dataUser.id == currentComment.userId || showAdminBoard" class="btn btn-success float-right" @click="editPost(currentComment)"> {{editing? 'Update':'Modify'}} </button>
             <button v-show="!editing" class="btn btn-secondary mr-2 float-right" @click="$router.go(-1)"> Back </button>   
             <button v-show="editing" v-if="dataUser.id == currentComment.userId || showAdminBoard" class="btn btn-secondary mr-2 float-right" @click="cancel()"> Cancel </button>
@@ -206,8 +206,9 @@ li{
    border:white
 }
 .card-ico{
-  margin-top: -4px;
+  margin-top: -0px;
   width: 37px;
+  border-radius: 50%;
 }
 .textBox{
    width: 100%;

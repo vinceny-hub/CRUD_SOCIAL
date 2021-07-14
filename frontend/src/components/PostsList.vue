@@ -38,7 +38,7 @@
                 <div class="">
                   <div class="">
                     <div>                                       <!-- Share and upload button -->
-                      <img class="card-img-post" src="../img/icon-left-font-sized.png" alt="logo Groupomania text">
+                      <img class="card-img-post titi_img" src="../img/titi1.png" alt="logo Groupomania text">
                       <button @click="savePost" :disabled="!post.description" type="submit" class="btn btn-primary float-right" v-show="isHidden">Share</button>
                       <button @click="uploadImage"  :disabled="!noImage" type="submit" class="btn btn-success float-right" v-show="!isHidden">Upload</button> 
                     </div>
@@ -52,7 +52,7 @@
         </div>
       </div>
       <div class="">          
-        <div class="d-inline-flex p-2"> <img class="title-img" src="../img/icon.png" alt="logo Groupomania"><h4 class="title-pos">Posts</h4></div>
+        <div class="d-inline-flex p-2 post_title_margin"> <img class="title-img" src="../img/titi1.png" alt="logo Groupomania"><h4 class="title-pos">Posts</h4></div>
           <div class="">
             <div class="post-heading">            
               <ul class="list-group">                                     <!-- list of posts reversed -->
@@ -81,9 +81,11 @@
                       </div> 
                     </div>
                   </div>             
-                </div>      
-              <div>   
-              <img class="card-img" src="../img/icon-left-font-sized.png" alt="Goupomania image">     <!-- create a comment for this post -->
+                </div>  
+                <div>    
+              <div class="mini_logo_pos">   
+              <img class="card-img" src="../img/titi1.png" alt="Goupomania image"><p class="titi_title_mini"> Le coin de Titi </p>    <!-- create a comment for this post -->
+              </div>
               <a :href="'/posts/' + post.id"><button  href="#top" class="btn btn-outline pink float-right float-bottom"> Comment </button></a>
               </div>
             </div>             
@@ -374,17 +376,24 @@ export default {
    background-color:  #091f43;
 }
 .title-pos{
+  margin-left: 10px;
   margin-top: 10px;
   color: #091f43;
   font-weight: bold;
 }
 .card-img{
-  width: 125px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  float: left;
 }
 .card-img-post{
   width: 125px;
   margin-top: 10px;
   border-bottom: none;
+}
+.post_title_margin{
+  margin-top: 25px;
 }
 #posts-tab{
   border: 1px solid #e1e1e1;
@@ -403,10 +412,18 @@ export default {
 .card-body{
    box-shadow: 10px 7px 10px #091f43;
 }
-.title-img{
+.titi_img{
   width: 50px; 
   margin-top: 0px;
   margin-bottom: 0px;
+  border-radius: 50%;
+}
+.title-img{
+  margin-top: 15px;
+  width: 50px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 50%;
 }
 .gedf-main{
   margin-bottom: 100px;
@@ -456,6 +473,20 @@ li{
 }
 .colorLink{
   color: #0069d9;
+}
+
+.titi_title_mini{
+  padding-top: 10px;
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 11px;
+  color:rgb(55, 13, 133);
+  font-family:Verdana;
+ 
+
+}
+.mini_logo_pos{
+float: left;
 }
 
 </style>

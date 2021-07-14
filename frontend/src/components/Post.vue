@@ -6,8 +6,9 @@
           <div v-if="currentPost" class="card-body">
             <div class="">
               <div class="d-inline-flex p-0"> 
-                <img class="title-img-comment" src="../img/icon1.png" alt="icon logo groupomania">
-                <h4 class="title-pos">Post</h4>
+                   <div class="d-inline-flex p-2 post_title_margin"> <img class="title-img" src="../img/titi1.png" alt="logo Groupomania"><h4 class="title-pos">Post</h4></div>
+                <!-- <img class="title-img-comment" src="../img/icon1.png" alt="icon logo groupomania"> -->
+                <!-- <h4 class="title-pos">Post</h4> -->
               </div>
             </div>
             <div class="jk">
@@ -38,8 +39,8 @@
                     <div class="py-3"></div>
                   </div>
                 </div>
-                <img  v-if="dataUser.id == currentPost.userId || showAdminBoard" class="card-ico" src="../img/icon1.png" alt="icon logo groupomania">
-                <img  v-else class="card-img" src="../img/icon-left-font-sized1.png" alt="logo groupomania">
+                <img  v-if="dataUser.id == currentPost.userId || showAdminBoard" class="card-img-bottom" src="../img/titi1.png" alt="icon logo groupomania">
+                <img  v-else class="card-img-bottom" src="../img/titi1.png" alt="logo groupomania">
                                      <!-- Buttons accesssibles if current user is user whom made post or administrator-->   
                 <a href="#top"> <button v-show="!editing"  class="btn btn-outline pink float-right buttonCEC"> Comment </button></a>
                 <button v-show="isDisplay" v-if="dataUser.id == currentPost.userId || showAdminBoard" class="btn btn-success float-right buttonCEC" href="#top" @click="editPost(currentPost)"> Edit </button>
@@ -67,7 +68,7 @@
                         <div class="postCard">        
                           <textarea-autosize placeholder="Type something here..." ref="myTextarea" :min-height="30" :max-height="350" type="text"   class="form-control" id="description" autofocus v-model="comment.description"/>
                         </div>
-                        <div class="d-flex justify-content-between float-right width-box">   <img class="card-img float-left" src="../img/icon-left-font-sized1.png" alt="logo groupomania">
+                        <div class="d-flex justify-content-between float-right width-box">   <img class="card-img-bottom float-left" src="../img/titi1.png" alt="logo groupomania">
                           <div  class="">
                             <button  @click="saveComment" class="btn btn-primary float-right"> Share </button>
                             <button class="btn btn-secondary mr-2 float-right" @click="cancelled()"> Cancel </button>
@@ -309,6 +310,10 @@ export default {
   width: 100px;
   height: 20px;
 }
+.card-img-bottom{
+  width: 37px;
+  border-radius: 50%;
+}
 .comment {
     width: 80%;
     overflow: hidden;
@@ -331,6 +336,7 @@ export default {
 .card-ico{
   margin-top: -4px;
   width: 37px;
+  border-radius: 50%;
 }
 .postBox {   
   border: 0.1vw solid grey;
@@ -380,6 +386,16 @@ li{
   margin-bottom: 30px;
   bottom:0;
   width:100%;
+}
+.title-img{
+  margin-top: 15px;
+  width: 50px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 50%;
+}
+.title-pos{
+  margin-left:7px;
 }
 
 </style>

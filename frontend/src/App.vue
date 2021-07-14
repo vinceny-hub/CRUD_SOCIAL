@@ -2,9 +2,13 @@
   <div id="app">  
     <nav id="#top" class="navbar navbar-expand-lg navbar-light bg-white border-nav static-top">
       <div class="container">
-        <a class="navbar-brand head-logo"  @click.prevent href="#">
-          <img class="head-img" src="./img/titi0.png" alt="logo groupomania"><h3 class="font-weight-bold"></h3>
+        <div class="titi_bloc">
+        <a class="navbar-brand head-logo titi_bloc"  @click.prevent href="#">
+          
+          <img class="head-img" src="./img/titi0.png" alt="logo groupomania">
+           <p class="titi_title"> Le coin de Titi </p>
         </a>
+        </div>
         <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,7 +59,7 @@
     </div>
     <footer id="sticky-footer" class="py-4  text-white-50">
       <div  id="commentArea" class="container text-center">
-        <small>Copyright  &copy;  <img class="foot-img" src="./img/titi0.png" alt="footer logo groupomania"></small> 
+        <small>Copyright  &copy;  <img class="foot-img" src="./img/titiCage.png" alt="footer logo groupomania"></small> 
       </div>
     </footer>
   </div>   
@@ -113,13 +117,18 @@ nav{
 }
 
 .head-img{
-  width: 275px;
-  height: 30px;
+  width: 50px;
+  height: 0px;
+  border-radius: 50%;
+
+  float: left;
 }
 
 .foot-img{
-  width: 145px;
-  height: 30px;
+  width: 45px;
+  height: 42.5px;
+  border-radius: 50%;
+  margin-left: 25px;
 }
 footer{  
   background-color:#091f43;  
@@ -130,5 +139,31 @@ footer{
 .border-nav{
   border-bottom: 1px solid #091f43 ;
 }
+.titi_title{
+  padding-top: 5px;
+  margin-left: 60px;
+  font-weight: bold;
+  font-size: 25px;
+  color:rgb(55, 13, 133);
+  font-family:Verdana;
+ 
+
+}
+ /* .titi_bloc{
+  display: table-cell;
+ 
+  
+} */
+ /* .titi_title > img{
+  width: 50px;
+ 
+   
+}  */
+
+
+
+/* .titi_bloc > h3{
+  line-height: 50px;
+} */ 
 
 </style>
