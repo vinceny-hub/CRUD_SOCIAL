@@ -84,6 +84,9 @@ export default {
           this.$store.dispatch('auth/login', this.user).then(
             () => {
               this.$router.push('/posts');
+             
+            location.reload()
+  
             },
             error => {
               this.loading = false;

@@ -52,7 +52,7 @@
         </div>
       </div>
       <div class="">          
-        <div class="d-inline-flex p-2 post_title_margin"> <img class="title-img" src="../img/titi1.png" alt="logo titi"><h4 class="title-pos">Posts</h4></div>
+        <div class="d-inline-flex p-2 post_title_margin"> <img class="card-img-post titi_img" src="../img/titi1.png" alt="logo titi"><h4 class="title-pos">Posts</h4></div>
           <div class="">
             <div class="post-heading">            
               <ul class="list-group">                                     <!-- list of posts reversed -->
