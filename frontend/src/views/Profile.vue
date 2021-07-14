@@ -3,13 +3,16 @@
     <div class="row h-100 justify-content-center align-items-center">
       <div class="col-md-8 gedf-main">
         <div class="">          
-          <div class="d-inline-flex p-2"> <img class="title-img" src="../img/titi1.png" alt="icon logo titi"><h4 class="title-pos">Posts</h4></div>
+          <div class="d-inline-flex p-2"> 
+            <!-- <img class="title-img" src="../img/titi1.png" alt="icon logo titi"> -->
+            <h4 class="title-pos">Profil </h4>
+          </div>
           <div class="card-body">
             <div class="">
               <div class="post-heading">
                 <div class="container">
                   <header class="jumbotron">
-                    <h3> <strong> {{currentUser.username}} </strong> Profile </h3>
+                    <h3> <strong> {{currentUser.username}} </strong> Profil </h3>
                   </header>
                   <button v-if="currentUser.id" class="badge badge-danger mr-2 btn-up float-right" @click="editDeleteUser"> Delete account </button>  
                   <p class="p-up" v-if="!editingUsername"><strong>Username : {{currentUser.username}} </strong></p>
