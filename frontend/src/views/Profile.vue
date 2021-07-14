@@ -3,7 +3,7 @@
     <div class="row h-100 justify-content-center align-items-center">
       <div class="col-md-8 gedf-main">
         <div class="">          
-          <div class="d-inline-flex p-2"> <img class="title-img" src="../img/icon.png" alt="icon logo groupomania"><h4 class="title-pos">Posts</h4></div>
+          <div class="d-inline-flex p-2"> <img class="title-img" src="../img/titi1.png" alt="icon logo titi"><h4 class="title-pos">Posts</h4></div>
           <div class="card-body">
             <div class="">
               <div class="post-heading">

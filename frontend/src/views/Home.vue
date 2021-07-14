@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <header class=" home-logo-color">
-      <a class="navbar-brand head-logo"  @click.prevent href="#">
-          <img class="head-img" src="../img/icon-left-font-monochrome-white1.png" alt="header logo groupomania "><h3 class="font-weight-bold"></h3>
+    <header class="home-logo-color-titi">
+      <a class=""  @click.prevent href="#">
+          <img class="head-img-logo" src="../img/titi1.png" alt="header logo titi "><h3 class="font-weight-bold"></h3>
         </a>
       <!-- <h3>{{content}}</h3> -->
     </header>
@@ -36,15 +36,22 @@ export default {
 </script>
 
 <style>
-.home-logo-color{
- width: 100%; 
+.home-logo-color-titi{
+ width: 50vw; 
+ height: 32.5vw;
+ margin: 0 auto;
  text-align: center;
- background-color:#091f43;
- margin-bottom: 250px;
+ background-color:yellow;
+ margin-bottom: 150px;
 }
 .home-logo-color img{
  width: 50vw;
  height: 10vw;
+}
+.head-img-logo{
+  width: 32.5vw;
+  height: 32.5vw;
+  
 }
 
 </style>

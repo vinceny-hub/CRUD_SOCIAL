@@ -5,7 +5,7 @@
         <div class="titi_bloc">
         <a class="navbar-brand head-logo titi_bloc"  @click.prevent href="#">
           
-          <img class="head-img" src="./img/titi0.png" alt="logo groupomania">
+          <img class="head-img" src="./img/titi0.png" alt="logo titi">
            <p class="titi_title"> Le coin de Titi </p>
         </a>
         </div>
@@ -59,7 +59,7 @@
     </div>
     <footer id="sticky-footer" class="py-4  text-white-50">
       <div  id="commentArea" class="container text-center">
-        <small>Copyright  &copy;  <img class="foot-img" src="./img/titiCage.png" alt="footer logo groupomania"></small> 
+        <small>Copyright  &copy;  <img class="foot-img" src="./img/titiCage.png" alt="footer logo titi"></small> 
       </div>
     </footer>
   </div>   
@@ -125,8 +125,8 @@ nav{
 }
 
 .foot-img{
-  width: 45px;
-  height: 42.5px;
+  width: 35px;
+  height: 32.5px;
   border-radius: 50%;
   margin-left: 25px;
 }

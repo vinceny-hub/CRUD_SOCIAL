@@ -3,7 +3,7 @@
     <div class="row h-100 justify-content-center align-items-center">
       <div class="col-md-8 gedf-main">
         <div class="">          
-          <div class="d-inline-flex p-2"> <img class="title-img" src="../img/icon.png" alt="icon logo groupomania"><h4 class="title-pos">Posts</h4></div>
+          <div class="d-inline-flex p-2"> <img class="title-img" src="../img/icon.png" alt="icon logo titi"><h4 class="title-pos">Posts</h4></div>
           <div class="">
             <div class="post-heading">            
               <ul class="list-group">                             <!-- set active user -->
@@ -27,7 +27,7 @@
                       </div>
                     </div>              
                     <div>                                               <!-- part to delete an user -->
-                      <img class="card-img" src="../img/icon-left-font-sized.png" alt="logo Groupomania">
+                      <img class="card-img" src="../img/icon-left-font-sized.png" alt="logo titi">
                       <a><button  href="#top" class=" btn btn-sm btn-danger float-right float-bottom" @click="deleteUser(user, index)"> Delete </button></a>
                     </div>
                   </div>             

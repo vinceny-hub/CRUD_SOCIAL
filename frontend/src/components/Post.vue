@@ -6,8 +6,8 @@
           <div v-if="currentPost" class="card-body">
             <div class="">
               <div class="d-inline-flex p-0"> 
-                   <div class="d-inline-flex p-2 post_title_margin"> <img class="title-img" src="../img/titi1.png" alt="logo Groupomania"><h4 class="title-pos">Post</h4></div>
-                <!-- <img class="title-img-comment" src="../img/icon1.png" alt="icon logo groupomania"> -->
+                   <div class="d-inline-flex p-2 post_title_margin"> <img class="title-img" src="../img/titi1.png" alt="logo titi"><h4 class="title-pos">Post</h4></div>
+                <!-- <img class="title-img-comment" src="../img/icon1.png" alt="icon logo titi"> -->
                 <!-- <h4 class="title-pos">Post</h4> -->
               </div>
             </div>
@@ -39,8 +39,8 @@
                     <div class="py-3"></div>
                   </div>
                 </div>
-                <img  v-if="dataUser.id == currentPost.userId || showAdminBoard" class="card-img-bottom" src="../img/titi1.png" alt="icon logo groupomania">
-                <img  v-else class="card-img-bottom" src="../img/titi1.png" alt="logo groupomania">
+                <img  v-if="dataUser.id == currentPost.userId || showAdminBoard" class="card-img-bottom" src="../img/titi1.png" alt="icon logo titi">
+                <img  v-else class="card-img-bottom" src="../img/titi1.png" alt="logo titi">
                                      <!-- Buttons accesssibles if current user is user whom made post or administrator-->   
                 <a href="#top"> <button v-show="!editing"  class="btn btn-outline pink float-right buttonCEC"> Comment </button></a>
                 <button v-show="isDisplay" v-if="dataUser.id == currentPost.userId || showAdminBoard" class="btn btn-success float-right buttonCEC" href="#top" @click="editPost(currentPost)"> Edit </button>
@@ -68,7 +68,7 @@
                         <div class="postCard">        
                           <textarea-autosize placeholder="Type something here..." ref="myTextarea" :min-height="30" :max-height="350" type="text"   class="form-control" id="description" autofocus v-model="comment.description"/>
                         </div>
-                        <div class="d-flex justify-content-between float-right width-box">   <img class="card-img-bottom float-left" src="../img/titi1.png" alt="logo groupomania">
+                        <div class="d-flex justify-content-between float-right width-box">   <img class="card-img-bottom float-left" src="../img/titi1.png" alt="logo titi">
                           <div  class="">
                             <button  @click="saveComment" class="btn btn-primary float-right"> Share </button>
                             <button class="btn btn-secondary mr-2 float-right" @click="cancelled()"> Cancel </button>

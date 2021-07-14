@@ -52,7 +52,9 @@ const db = require("./app/models/index"); // get db from models and sequelize
 db.sequelize.sync({force: true}).then(() => {
   console.log('Drop and Resync Db');
   // initial();
-require("./app/config/admin") 
+require("./app/config/admin")
+require("./app/config/titiUser") 
+require("./app/config/post") 
 
  }).then(()=>{
   // require("./app/config/admin")
