@@ -225,6 +225,7 @@ export default {
     },
     // get all comments
     getComment() {
+      
       PostCommentService.getAll()
       .then(response => {          
         this.comments = response.data;
@@ -235,9 +236,9 @@ export default {
         console.log(e);
       });
   },   
-  // load(){
-  //     location.reload()
-  // }, 
+  load(){
+      location.reload()
+  }, 
       // update a post
     updatePost() {
       PostDataService.update(this.currentPost.id, this.currentPost)
