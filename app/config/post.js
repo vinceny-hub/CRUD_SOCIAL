@@ -8,7 +8,7 @@ const Op = db.Sequelize.Op;
 
 function setPost(req, res) {  
 Post.create({
-    id:999,
+    id:5,
     description: "Oh ! Z'ai cru voir un 'rominet... (I Tawt I Taw a Puddy Tat)",
     userId: 15,
     // email: "titi@live.fr",

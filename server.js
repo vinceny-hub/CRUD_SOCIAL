@@ -49,14 +49,18 @@ server.on('listening', () => {
 })
 const db = require("./app/models/index"); // get db from models and sequelize
 // require("./app/config/roles")
-db.sequelize.sync({force: true}).then(() => {
-  console.log('Drop and Resync Db');
-  // initial();
+
+// db.sequelize.sync({force: true}).then(() => {
+//   console.log('Drop and Resync Db');
+
+// initial();
+db.sequelize.sync().then(() => {
+console.log('Drop and Resync Db');
 require("./app/config/admin")
 require("./app/config/titiUser") 
 require("./app/config/post") 
 
- }).then(()=>{
+//  }).then(()=>{
   // require("./app/config/admin")
  })
 //  require("./app/config/role")
