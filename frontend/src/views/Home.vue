@@ -51,6 +51,7 @@ export default {
 .head-img-logo{
   width: 32.5vw;
   height: 32.5vw;
+  border-radius:50%;
   
 }
 

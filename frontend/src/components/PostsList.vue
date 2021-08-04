@@ -53,7 +53,7 @@
       </div>
       <div class="">          
         <div class="d-inline-flex p-2 post_title_margin"> 
-          <!-- <img class="card-img-post titi_img" src="../img/titi1.png" alt="logo titi"> -->
+        <img class="card-img-post titi_img" src="../img/titi1.png" alt="logo titi"> 
         <h4 class="title-pos">Posts</h4></div>
           <div class="">
             <div class="post-heading">            
@@ -67,7 +67,7 @@
                     </div>
                     <h6 class="text-muted time"> {{ post.createdAt.slice(7,10).replace(/-/g,` `) }} {{ post.createdAt.slice(5,7).replace(/-/g,` `) }} {{ post.createdAt.slice(0,4).replace(/-/g,`.`) }} {{post.createdAt.slice(11,16).replace(/:/g,`h`)}} (UTC)</h6>
                   </div>                                                          <!-- posted image -->
-                  <div class="card aPost rounded card-white"> <h5><strong>{{ post.description }}</strong></h5><img :src="post.imageUrl"></div> 
+                  <div class="card aPost rounded card-white"> <h5><strong>{{ post.description }}</strong></h5><img class="img-contain" :src="post.imageUrl"></div> 
                   <div class="">
                     <div class="post-heading">
                       <div class="float meta">
@@ -417,9 +417,15 @@ export default {
 }
 .titi_img{
   width: 50px; 
+  height: 50px;
   margin-top: 0px;
   margin-bottom: 0px;
   border-radius: 50%;
+}
+.img-contain{
+  width:100%;
+  height: 100%;
+  object-fit: contain;
 }
 /* .title-img{
   margin-top: 15px;

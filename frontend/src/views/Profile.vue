@@ -4,7 +4,7 @@
       <div class="col-md-8 gedf-main">
         <div class="">          
           <div class="d-inline-flex p-2"> 
-            <!-- <img class="title-img" src="../img/titi1.png" alt="icon logo titi"> -->
+            <img class="title-img" src="../img/titi1.png" alt="icon logo titi">
             <h4 class="title-pos">Profil </h4>
           </div>
           <div class="card-body">
@@ -14,7 +14,7 @@
                   <header class="jumbotron">
                     <h3> <strong> {{currentUser.username}} </strong> Profil </h3>
                   </header>
-                  <button v-if="currentUser.id" class="badge badge-danger mr-2 btn-up float-right" @click="editDeleteUser"> Delete account </button>  
+                  <!-- <button v-if="currentUser.id" class="badge badge-danger mr-2 btn-up float-right" @click="editDeleteUser"> Delete account </button>   -->
                   <p class="p-up" v-if="!editingUsername"><strong>Username : {{currentUser.username}} </strong></p>
                   <input placeholder="Type something here..." ref="myTextarea" v-else type="text"  v-model="currentUser.username" class="form-control input-dwn" id="description"/>
                   <button v-show="editingUsername"   id="btnC" class="badge badge-secondary mr-2 btn-dwn " @click="cancelEditUsername()"> Cancel </button>
@@ -30,10 +30,11 @@
                   <button class="badge badge-success  btn-dwn  buttonCEC" href="#top" @click="editUserPassword(currentUser)">  {{editingPassword? 'Update':'Edit'}} </button><p  v-show="editingPassword" class="warning"> Warning ! You will be logged-out to perform changes </p>
                   <br> -->
                   <p class=""> <strong>Id :</strong>  {{currentUser.id}}  </p>
-                  <strong>Authorities:</strong>
-                  <ul class="p-dwn">
-                    <li v-for="(role,index) in currentUser.roles" :key="index">{{role}}</li>      
-                  </ul>   
+                  <p class=""  v-for="(role,index) in currentUser.roles" :key="index"> <strong>Authorities:</strong> {{role}} </p>
+                
+                    <!-- <span v-for="(role,index) in currentUser.roles" :key="index">{{role}}</span>       -->
+                  <!-- </div>   -->
+                   <button v-if="currentUser.id" class="badge badge-danger mr-2 btn-up-del float-right" @click="editDeleteUser"> Delete account </button>   
                 </div>
               </div>
             </div>
@@ -209,6 +210,9 @@ export default {
 .btn-up{ 
   margin-bottom: 10px;
 }
+.btn-up-del{ 
+  margin-top: -10px;
+}
 .input-dwn{
   margin-bottom: 10px;
 }
@@ -242,6 +246,7 @@ ul{
 }
 .title-img{
   width: 50px;
+  height: 50px;
   margin-top: 0px;
   margin-bottom: 0px;
 }

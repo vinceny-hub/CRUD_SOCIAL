@@ -25,7 +25,7 @@
                   <div class="kl card aPost rounded card-white" v-if="!editing"> 
                                                                    <!-- get post selected -->
                     <h5 class="postCard"><strong>{{ currentPost.description }}</strong></h5>
-                    <img :src="currentPost.imageUrl">
+                    <img class="img-contain" :src="currentPost.imageUrl" >
                   </div>   
                     <!-- shown if editing -->                                                   
                   <textarea-autosize v-show="dataUser.id == currentPost.userId  && !currentPost.imageUrl || showAdminBoard && currentPost.description" placeholder="Type something here..." ref="myTextarea"  :min-height="30" :max-height="350" v-else type="text"   class="form-control" id="description" v-model="currentPost.description"/>
@@ -299,6 +299,7 @@ export default {
 }
 .title-img-comment{
   width: 40px;
+  height: 40px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -312,6 +313,7 @@ export default {
 }
 .card-img-bottom{
   width: 37px;
+  height: 37px;
   border-radius: 50%;
 }
 .comment {
@@ -356,6 +358,11 @@ li{
 }
 .gedf-main .post-comment{    
    margin-bottom: 30px;
+}
+.img-contain{
+  width:100%;
+  height: 100%;
+  object-fit: contain;
 }
  .card-shadow{
     box-shadow: 10px 7px 10px #091f43;
