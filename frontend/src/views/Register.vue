@@ -10,13 +10,13 @@
         <div v-if="!successful">
           <div class="form-group">
             <label for="username">Username</label>
-            <input
-              v-model="user.username"
-              v-validate="'required|min:3|max:20'"
-              type="text"
-              class="form-control"
-              name="username"
-            />
+              <input
+                v-model="user.username"
+                v-validate="'required|min:3|max:20'"
+                type="text"
+                class="form-control"
+                name="username"
+              />
             <div
               v-if="submitted && errors.has('username')"
               class="alert-danger"
