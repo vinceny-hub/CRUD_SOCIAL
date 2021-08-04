@@ -38,7 +38,7 @@
                 <div class="">
                   <div class="">
                     <div>                                       <!-- Share and upload button -->
-                      <img class="card-img-post titi_img" src="../img/titi1.png" alt="logo titi text">
+                      <img class="titi_img" src="../img/titi1.png" alt="logo titi text">
                       <button @click="savePost" :disabled="!post.description" type="submit" class="btn btn-primary float-right" v-show="isHidden">Share</button>
                       <button @click="uploadImage"  :disabled="!noImage" type="submit" class="btn btn-success float-right" v-show="!isHidden">Upload</button> 
                     </div>
@@ -53,7 +53,7 @@
       </div>
       <div class="">          
         <div class="d-inline-flex p-2 post_title_margin"> 
-        <img class="card-img-post titi_img" src="../img/titi1.png" alt="logo titi"> 
+        <img class="titi_img" src="../img/titi1.png" alt="logo titi"> 
         <h4 class="title-pos">Posts</h4></div>
           <div class="">
             <div class="post-heading">            
@@ -86,7 +86,7 @@
                 </div>  
                 <div>    
               <div class="mini_logo_pos">   
-              <img class="card-img" src="../img/titi1.png" alt="Goupomania image"><p class="titi_title_mini"> Le coin de Titi </p>    <!-- create a comment for this post -->
+              <img class="titi_img" src="../img/titi1.png" alt="Goupomania image"><p class="titi_title_mini"> Le coin de Titi </p>    <!-- create a comment for this post -->
               </div>
               <a :href="'/posts/' + post.id"><button  href="#top" class="btn btn-outline pink float-right float-bottom"> Comment </button></a>
               </div>
@@ -384,17 +384,17 @@ export default {
   color: #091f43;
   font-weight: bold;
 }
-.card-img{
+/* .card-img{
   width: 35px;
   height: 35px;
-  border-radius: 50%;
-  float: left;
-}
-.card-img-post{
-  width: 125px;
+  /* border-radius: 50%; */
+ 
+/* }  */
+/* .card-img-post{
+  width: 50px;
   margin-top: 10px;
   border-bottom: none;
-}
+} */
 .post_title_margin{
   margin-top: 25px;
 }
@@ -485,8 +485,8 @@ li{
 }
 
 .titi_title_mini{
-  padding-top: 10px;
-  margin-left: 40px;
+  margin-top: -30px;
+  margin-left: 60px;
   font-weight: bold;
   font-size: 11px;
   color:rgb(55, 13, 133);

@@ -249,6 +249,7 @@ ul{
   height: 50px;
   margin-top: 0px;
   margin-bottom: 0px;
+  border-radius: 50%;
 }
 .gedf-main{
   margin-bottom: 100px;

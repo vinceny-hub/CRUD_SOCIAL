@@ -397,6 +397,7 @@ li{
 .title-img{
   margin-top: 15px;
   width: 50px; 
+  height: 50px;
   margin-top: 0px;
   margin-bottom: 0px;
   border-radius: 50%;
