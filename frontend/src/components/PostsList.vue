@@ -173,6 +173,11 @@ export default {
   if (document.readyState == "complete") {
     console.log('Page completed with image and files!')
     // fetch to next page or some code
+     this.retrievePosts();
+      this.retrieveAllUsers()
+      this.retrievePosts();
+      this.getComment()
+      this.message = '';
   }
 }
       // this.retrievePosts();
