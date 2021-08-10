@@ -369,7 +369,7 @@ export default {
       this.retrievePosts()
       // .then(() =>
 
-      this.getComment()
+      // this.getComment()
       // )
       // this.retrieveUsers()
       //  this.retrieveAllUsers()
