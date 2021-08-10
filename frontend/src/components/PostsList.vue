@@ -169,11 +169,17 @@ export default {
   },
     mounted() {
      
-      this.retrievePosts();
-      this.retrieveAllUsers()
-      this.retrievePosts();
-      this.getComment()
-      this.message = '';
+     document.onreadystatechange = () => {
+  if (document.readyState == "complete") {
+    console.log('Page completed with image and files!')
+    // fetch to next page or some code
+  }
+}
+      // this.retrievePosts();
+      // this.retrieveAllUsers()
+      // this.retrievePosts();
+      // this.getComment()
+      // this.message = '';
      
       // this.retrieveUsers()
       //  this.retrieveAllUsers()
