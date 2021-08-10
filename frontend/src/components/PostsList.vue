@@ -172,7 +172,7 @@ export default {
    mounted() {
       this.retrievePosts();
       // this.message = '';
-      // this.getComment()
+      this.getComment()
       // this.retrievePosts();
       // this.retrieveUsers()
       //  this.retrieveAllUsers()
