@@ -176,7 +176,6 @@ export default {
       // this.retrievePosts();
       // this.retrieveUsers()
       //  this.retrieveAllUsers()
-
   },
 
     //  // get all posts
