@@ -365,9 +365,12 @@ export default {
     mounted() {
       // this.message = '';
       // this.getComment()
-      this.retrievePosts().then(() =>
+      this.retrieveAllUsers()
+      this.retrievePosts()
+      // .then(() =>
 
-      this.getComment())
+      this.getComment()
+      // )
       // this.retrieveUsers()
       //  this.retrieveAllUsers()
 
