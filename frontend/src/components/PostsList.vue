@@ -368,8 +368,8 @@ export default {
     }
   },
    
-   updated() {
-    
+    mounted() {
+      this.$router.go(0)
       this.retrieveAllPosts()
      
   }        
