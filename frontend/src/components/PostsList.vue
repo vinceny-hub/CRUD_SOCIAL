@@ -347,8 +347,8 @@ export default {
     logOut() {
       this.$store.dispatch('auth/logout');
       this.$router.push('/login');
-    }
-  },
+    },
+  
     // get all posts
     retrievePosts() {
       PostDataService.getAll()
@@ -360,7 +360,7 @@ export default {
           console.log(e);
         });
     },
-    
+  },
     mounted() {
       this.message = '';
       this.getComment()
