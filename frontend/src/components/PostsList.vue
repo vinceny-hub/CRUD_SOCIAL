@@ -362,7 +362,7 @@ export default {
     }
   },
    
-    created() {
+    ready() {
       // this.message = '';
       this.getComment()
       this.retrievePosts();
