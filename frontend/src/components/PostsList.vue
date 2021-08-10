@@ -167,28 +167,28 @@ export default {
       return false;
     }
   },
-    mounted() {
-     
-     document.onreadystatechange = () => {
-  if (document.readyState == "complete") {
-    console.log('Page completed with image and files!')
-    // fetch to next page or some code
-     this.retrievePosts();
-      this.retrieveAllUsers()
-      this.retrievePosts();
-      this.getComment()
+
+   mounted() {
       this.message = '';
-  }
-}
-      // this.retrievePosts();
-      // this.retrieveAllUsers()
-      // this.retrievePosts();
-      // this.getComment()
-      // this.message = '';
-     
+      this.getComment()
+      this.retrievePosts();
       // this.retrieveUsers()
-      //  this.retrieveAllUsers()
+       this.retrieveAllUsers()
+
   },
+
+    //  // get all posts
+    // retrievePosts() {
+    //   PostDataService.getAll()
+    //     .then(response => {
+    //       this.posts = response.data;
+    //       console.log(response.data);          
+    //     })
+    //     .catch(e => {
+    //       console.log(e);
+    //     });
+    // },
+
  
   methods: {
 
@@ -368,33 +368,9 @@ export default {
     logOut() {
       this.$store.dispatch('auth/logout');
       this.$router.push('/login');
-    },
-  
-    // get all posts
-    retrievePosts() {
-      PostDataService.getAll()
-        .then(response => {
-          this.posts = response.data;
-          console.log(response.data);          
-        })
-        .catch(e => {
-          console.log(e);
-        });
-    },
-  },
-    mounted() {
-     
-      this.retrievePosts();
-      this.retrieveAllUsers()
-      this.retrievePosts();
-      this.getComment()
-      this.message = '';
-     
-      // this.retrieveUsers()
-      //  this.retrieveAllUsers()
-  },
-  
-   
+    }
+  },   
+          
 }
 
 </script>
