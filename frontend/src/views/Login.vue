@@ -67,11 +67,11 @@ export default {
       return this.$store.state.auth.status.loggedIn;
     }
   },
-  created() {
-    if (this.loggedIn) {
-      this.$router.push('/posts');
-    }
-  },
+  // created() {
+  //   if (this.loggedIn) {
+  //     this.$router.push('/posts');
+  //   }
+  // },
   methods: {
     handleLogin() {
       this.loading = true;
@@ -81,7 +81,8 @@ export default {
           return;
         }
         if (this.user.username && this.user.password) {
-          this.$store.dispatch('auth/login', this.user).then(
+          this.$store.dispatch('auth/login', this.user)
+          .then(
             () => {
               // this.$router.go(0)
               this.$router.push('/posts')
