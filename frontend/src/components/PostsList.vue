@@ -359,6 +359,12 @@ export default {
     logOut() {
       this.$store.dispatch('auth/logout');
       this.$router.push('/login');
+    },
+    retrieveAllPosts(){
+      this.getComment()
+      this.retrievePosts()
+      this.retrieveAllUsers()
+
     }
   },
    
@@ -366,7 +372,7 @@ export default {
       // this.message = '';
       // this.getComment()
       // this.retrieveAllUsers()
-      this.retrievePosts()
+      this.retrieveAllPosts()
       // .then(() =>
 
       // this.getComment()
