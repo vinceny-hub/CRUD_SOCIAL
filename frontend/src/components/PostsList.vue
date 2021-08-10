@@ -368,7 +368,7 @@ export default {
     }
   },
    
-    mounted() {
+   beforeMount() {
     
       this.retrieveAllPosts()
      
