@@ -364,8 +364,8 @@ export default {
    
     mounted() {
       // this.message = '';
-      // this.getComment()
-      this.retrievePosts();
+      getComment()
+      retrievePosts();
       // this.retrieveUsers()
       //  this.retrieveAllUsers()
 
