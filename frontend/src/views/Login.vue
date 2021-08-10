@@ -85,11 +85,11 @@ export default {
             () => {
               this.$router.push('/posts')
 
-              .then(()=>     
+              // .then(()=>     
               // this.$mount    
               // location.reload()
-                this.$router.go(0)
-              )
+                // this.$router.go(0)
+              // )
   
             },
             error => {

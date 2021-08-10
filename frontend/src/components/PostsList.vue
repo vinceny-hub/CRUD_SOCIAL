@@ -370,7 +370,7 @@ export default {
   },
    
     mounted() {
-      
+      vm.$forceUpdate();
       this.retrieveAllPosts()
      
   }        
