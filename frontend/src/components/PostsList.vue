@@ -361,15 +361,17 @@ export default {
       this.$router.push('/login');
     },
     retrieveAllPosts(){
-      this.getComment()
-      this.retrievePosts()
       this.retrieveAllUsers()
+      this.retrievePosts()
+      this.getComment()
+     
+     
 
     }
   },
    
     mounted() {
-      this.$router.go(0)
+     
       this.retrieveAllPosts()
      
   }        
