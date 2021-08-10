@@ -169,14 +169,14 @@ export default {
     }
   },
 
-   mounted() {
-      this.retrievePosts();
-      // this.message = '';
-      this.getComment()
-      // this.retrievePosts();
-      // this.retrieveUsers()
-      //  this.retrieveAllUsers()
-  },
+  //  mounted() {
+  //     this.retrievePosts();
+  //     // this.message = '';
+  //     this.getComment()
+  //     // this.retrievePosts();
+  //     this.retrieveUsers()
+  //     //  this.retrieveAllUsers()
+  // },
 
     //  // get all posts
     // retrievePosts() {
