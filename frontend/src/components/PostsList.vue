@@ -362,12 +362,14 @@ export default {
     }
   },
    
-    ready() {
+    mounted() {
       // this.message = '';
-      this.getComment()
-      this.retrievePosts();
+      // this.getComment()
+      this.retrievePosts().then(() =>
+
+      this.getComment())
       // this.retrieveUsers()
-       this.retrieveAllUsers()
+      //  this.retrieveAllUsers()
 
   }        
 }
