@@ -145,6 +145,7 @@ export default {
     };
     
   },
+  
  
   computed: {
     dataUser(){  return JSON.parse(localStorage.getItem("user"))
@@ -169,11 +170,12 @@ export default {
   },
 
    mounted() {
-      this.message = '';
-      this.getComment()
       this.retrievePosts();
+      // this.message = '';
+      // this.getComment()
+      // this.retrievePosts();
       // this.retrieveUsers()
-       this.retrieveAllUsers()
+      //  this.retrieveAllUsers()
 
   },
 
