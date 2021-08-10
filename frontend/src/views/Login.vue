@@ -84,8 +84,8 @@ export default {
           this.$store.dispatch('auth/login', this.user)
           .then(
             () => {
-              //  this.$router.go(0)
-               this.$router.push('/')
+               this.$router.go(0)
+              //  this.$router.push('/posts')
 
               // .then(()=>     
               // this.$mount    
