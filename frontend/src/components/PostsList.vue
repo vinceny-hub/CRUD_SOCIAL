@@ -369,17 +369,9 @@ export default {
   },
    
     mounted() {
-      // this.message = '';
-      // this.getComment()
-      // this.retrieveAllUsers()
+    
       this.retrieveAllPosts()
-      // .then(() =>
-
-      // this.getComment()
-      // )
-      // this.retrieveUsers()
-      //  this.retrieveAllUsers()
-
+     
   }        
 }
 
