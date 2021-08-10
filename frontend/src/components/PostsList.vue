@@ -145,7 +145,6 @@ export default {
     };
     
   },
-  
  
   computed: {
     dataUser(){  return JSON.parse(localStorage.getItem("user"))
@@ -168,15 +167,6 @@ export default {
       return false;
     }
   },
-
-  //  mounted() {
-  //     this.retrievePosts();
-  //     // this.message = '';
-  //     this.getComment()
-  //     // this.retrievePosts();
-  //     this.retrieveUsers()
-  //     //  this.retrieveAllUsers()
-  // },
 
     //  // get all posts
     // retrievePosts() {
@@ -370,8 +360,16 @@ export default {
       this.$store.dispatch('auth/logout');
       this.$router.push('/login');
     }
-  },   
-          
+  },
+   
+    mounted() {
+      // this.message = '';
+      // this.getComment()
+      this.retrievePosts();
+      // this.retrieveUsers()
+      //  this.retrieveAllUsers()
+
+  }        
 }
 
 </script>
