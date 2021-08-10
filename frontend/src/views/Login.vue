@@ -85,7 +85,7 @@ export default {
           .then(
             () => {
                this.$router.go(0)
-              // this.$router.push('/posts')
+               this.$router.push('/')
 
               // .then(()=>     
               // this.$mount    
