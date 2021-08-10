@@ -367,8 +367,9 @@ export default {
       this.retrievePosts();
       // this.retrieveUsers()
        this.retrieveAllUsers()
-
-  }        
+  },
+  
+   
 }
 
 </script>
