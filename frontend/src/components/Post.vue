@@ -142,13 +142,19 @@ export default {
         .then(() => {
           // console.log(response.data);
           this.message = 'The post was updated successfully!';
+          this.routeToPostLists()
           // this.$router.push({ name: "posts" });
              
         })
         .catch(e => {
           console.log(e);
         });
-        this.$router.push({ name: "posts" });
+       
+    },
+    routeToPostLists(){
+
+      this.$router.push({ name: "posts" });
+
     },
     // save comment
      saveComment() {     
