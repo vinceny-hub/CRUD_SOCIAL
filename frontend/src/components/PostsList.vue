@@ -360,18 +360,20 @@ export default {
       this.$store.dispatch('auth/logout');
       this.$router.push('/login');
     },
-    retrieveAllPosts(){
+    // retrieveAllPosts(){
       
-      this.retrievePosts()
-      this.retrieveAllUsers()
-      this.getComment()
+    //   this.retrievePosts()
+    //   this.retrieveAllUsers()
+    //   this.getComment()
 
-    }
+    // }
   },
    
     mounted() {
-     
-      this.retrieveAllPosts()
+      this.retrievePosts()
+      this.retrieveAllUsers()
+      this.getComment()
+      // this.retrieveAllPosts()
      
   }        
 }
