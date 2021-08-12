@@ -168,6 +168,14 @@ export default {
     }
   },
 
+      mounted() {
+      this.retrievePosts()
+      this.retrieveAllUsers()
+      this.getComment()
+      // this.retrieveAllPosts()
+     
+  },
+
     //  // get all posts
     // retrievePosts() {
     //   PostDataService.getAll()
@@ -367,15 +375,8 @@ export default {
     //   this.getComment()
 
     // }
-  },
-   
-    mounted() {
-      this.retrievePosts()
-      this.retrieveAllUsers()
-      this.getComment()
-      // this.retrieveAllPosts()
-     
-  }        
+  },   
+        
 }
 
 </script>
