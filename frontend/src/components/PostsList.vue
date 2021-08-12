@@ -168,28 +168,6 @@ export default {
     }
   },
 
-      mounted() {
-      this.retrievePosts()
-      this.retrieveAllUsers()
-      this.getComment()
-      // this.retrieveAllPosts()
-     
-  },
-  //    created() {
-  //     this.retrievePosts()
-  //     this.retrieveAllUsers()
-  //     this.getComment()
-  //     // this.retrieveAllPosts()
-     
-  // },
-  //    beforeMount() {
-  //     this.retrievePosts()
-  //     this.retrieveAllUsers()
-  //     this.getComment()
-  //     // this.retrieveAllPosts()
-     
-  // },
-
     //  // get all posts
     // retrievePosts() {
     //   PostDataService.getAll()
@@ -211,19 +189,6 @@ export default {
       console.log(adRo)
     }
   
-    },
-       // get all posts
-    retrievePosts() {
-      // console.log()
-      PostDataService.getAll()
-        .then(response => {        
-          this.posts = response.data;
-          console.log(response.data);
-         
-        })        
-        .catch(e => {
-          console.log(e);
-        });
     },
     // get image selected
     upload(e) {   
@@ -309,7 +274,20 @@ export default {
           console.log(e);
         });
     },
-          //retrieve all users 
+      // get all posts
+    retrievePosts() {
+      // console.log()
+      PostDataService.getAll()
+        .then(response => {        
+          this.posts = response.data;
+          console.log(response.data);
+         
+        })        
+        .catch(e => {
+          console.log(e);
+        });
+    },
+      //retrieve all users 
     retrieveAllUsers() {      
       PostDataService.getAllUsers()
       .then(response => {
@@ -389,8 +367,15 @@ export default {
     //   this.getComment()
 
     // }
-  },   
-        
+  },
+   
+    mounted() {
+      this.retrievePosts()
+      this.retrieveAllUsers()
+      this.getComment()
+      // this.retrieveAllPosts()
+     
+  }        
 }
 
 </script>
