@@ -175,6 +175,13 @@ export default {
       // this.retrieveAllPosts()
      
   },
+     created() {
+      this.retrievePosts()
+      this.retrieveAllUsers()
+      this.getComment()
+      // this.retrieveAllPosts()
+     
+  },
 
     //  // get all posts
     // retrievePosts() {
