@@ -190,6 +190,19 @@ export default {
     }
   
     },
+       // get all posts
+    retrievePosts() {
+      // console.log()
+      PostDataService.getAll()
+        .then(response => {        
+          this.posts = response.data;
+          console.log(response.data);
+         
+        })        
+        .catch(e => {
+          console.log(e);
+        });
+    },
     // get image selected
     upload(e) {   
       this.post.imageUrl = e.target.files[0];
@@ -274,20 +287,7 @@ export default {
           console.log(e);
         });
     },
-      // get all posts
-    retrievePosts() {
-      // console.log()
-      PostDataService.getAll()
-        .then(response => {        
-          this.posts = response.data;
-          console.log(response.data);
-         
-        })        
-        .catch(e => {
-          console.log(e);
-        });
-    },
-      //retrieve all users 
+          //retrieve all users 
     retrieveAllUsers() {      
       PostDataService.getAllUsers()
       .then(response => {
