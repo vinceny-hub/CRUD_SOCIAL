@@ -13,6 +13,6 @@ export default axios.create({
     'Authorization': 'Bearer ' + accessToken,
     "Content-type": "application/json",
     "Content-Type": "multipart/form-data",
-    "Content-Security-Policy": "policy"
+    // "Content-Security-Policy": "policy"
   }
 });
