@@ -142,9 +142,10 @@ export default {
         .then(() => {
           // console.log(response.data);
           this.message = 'The post was updated successfully!';
-          this.$router.push({ name: "posts" });
-             
-        })
+          })
+           .then(() => {
+           this.$router.push({ name: "posts" });
+          })
         .catch(e => {
           console.log(e);
         });
