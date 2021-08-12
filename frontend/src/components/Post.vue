@@ -163,7 +163,7 @@ export default {
           // console.log(response.data);
           this.submitted = true;    
           this.message = 'The post was updated successfully!';
-          this.$router.push({ name: "posts" });
+          // this.$router.push({ name: "posts" });
         })
         .catch(e => {
           console.log(e);
