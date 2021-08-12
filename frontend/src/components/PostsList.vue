@@ -182,6 +182,13 @@ export default {
       // this.retrieveAllPosts()
      
   },
+     beforeMount() {
+      this.retrievePosts()
+      this.retrieveAllUsers()
+      this.getComment()
+      // this.retrieveAllPosts()
+     
+  },
 
     //  // get all posts
     // retrievePosts() {
