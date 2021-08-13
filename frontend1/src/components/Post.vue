@@ -142,6 +142,7 @@ export default {
         .then(() => {
           // console.log(response.data);
           this.message = 'The post was updated successfully!';
+             this.$router.go(0)
           this.$router.push({ name: "posts" });
              
         })
