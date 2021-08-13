@@ -8,9 +8,9 @@ const Op = db.Sequelize.Op;
 
 function setPost(req, res) {  
 Post.create({
-    id:1,
+    id:5,
     description: "Oh ! Z'ai cru voir un 'rominet... (I Tawt I Taw a Puddy Tat)",
-    userId: 2,
+    userId: 15,
     // email: "titi@live.fr",
     // password: bcrypt.hashSync('ADMIN19760112', 8),
     // roles: ['admin', 'user']
