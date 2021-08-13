@@ -370,6 +370,7 @@ export default {
   },
    
     mounted() {
+      this.message=''
       this.retrievePosts()
       this.retrieveAllUsers()
       this.getComment()
