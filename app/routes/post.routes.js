@@ -5,7 +5,6 @@ const auth = require("../middleware/auth");
 const posts = require("../controllers/post.controller");
 const multer = require('../middleware/multer-config')
 
-
   // Create a new Post
   router.post("/", auth, multer, posts.create);
 
