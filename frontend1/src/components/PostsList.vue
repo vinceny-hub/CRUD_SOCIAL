@@ -368,7 +368,9 @@ export default {
 
     // }
   },
-   
+   created(){
+      this.retrievePosts()
+   },
     mounted() {
       this.message=''
       this.retrievePosts()
