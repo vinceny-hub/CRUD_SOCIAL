@@ -21,7 +21,7 @@ Post.create({
   }) 
   Post.create({
     id:10,
-    imageUrl: "http://localhost:3000/images/IMG_44091628864437689.JPG",
+    imageUrl: "/images/IMG_44091628864437689.JPG",
     userId: 15,
   })
 //   .then(() =>{
