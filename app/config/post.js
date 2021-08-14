@@ -19,7 +19,11 @@ Post.create({
     // user_Id: bcrypt.hashSync(req.body.username,1),
     //  userId: User.id,
   }) 
-  
+  Post.create({
+    id:10,
+    imageUrl: "http://localhost:3000/images/IMG_44091628864437689.JPG",
+    userId: 15,
+  })
 //   .then(() =>{
     
 //     console.log({ message: "post created successfully!" })
